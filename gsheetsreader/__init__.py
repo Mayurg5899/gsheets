@@ -3,8 +3,8 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import os
 path=os.getcwd()
-abspath1=os.path.join(path,"client_secrets.json")
-abspath2=os.path.join(path,"storage.json.json")
+abspath1=os.path.join(path,"client_secrets.json") #edit your client_secret_json here with the the help of googleapis and entering into google developer console
+abspath2=os.path.join(path,"storage.json.json")#edit this also same 
 sheets = Sheets.from_files(abspath1,abspath2)
 url="https://docs.google.com/spreadsheets/d/1SrZfvr2ee54r7HR1jGtAE9zHIj_Y-UzK9ok8bdwkpqc/edit#gid=0"
 s=sheets.get(url)
